@@ -39,7 +39,7 @@ section {
 }
 
 #map {
-    height: 550px;  /* The height is 400 pixels */
+    height: 100%;
     width: 100%;  /* The width is the width of the web page */
     z-index: -1;
 }
