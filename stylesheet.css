@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    background-color: #ececec;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    background-image: url("monkeychill.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+}
+
+nav {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+    z-index: 0;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+nav h3 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    
+}
+
+
+nav hamburger {
+    float: right;
+    margin-right: 10%;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%)translateY(15%);
+    color: azure;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.hero-text button {
+    width: 150px;
+    height: 50px;
+    background: #03ceb8;
+    color: #fff;
+    margin-top: 25px;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 25px;
+    
+
+}
+
+button p {
+    font-size: 15px;
+}
+
+button:hover {
+    border: 2px solid #eeff04;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+@media screen and (max-width: 768px) {
+        .hero-text {
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%)translateY(10%);
+            color: azure;
+            font-family: 'Fredoka One', cursive;
+            font-weight: bold;
+            font-size: 20px;
+        }
+}
+
+  /* Navbar */
+  .aa-nav {
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    overflow: hidden;
+    background: transparent;
+    z-index: 2;
+  }
+  /* ./Navbar */
+  
+  /* Logo image */
+  .aa-nav-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline;
+    color: #eeff04;
+  }
+  /* ./Logo image */
+  
+  /* Nav items */
+  .aa-nav-items {
+    margin: 0;
+    padding-left: 270px;
+    float: left;
+    line-height: 65px;
+    list-style: none;
+  }
+  
+  .aa-nav-items > li {
+    display:inline-block;
+    padding-right: 10px;
+  }
+  
+  .aa-nav-items > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+  }
+  
+  .aa-nav-items > li > a:hover {
+    color: #fe9d47;
+  }
+  /* ./Nav items */
+  
+  /* Hamburger */
+  .aa-icon-bar {
+    background-color: #03ceb8;
+    display: block;
+    width: 22px;
+    height: 5px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+  }
+  
+  .top-bar {
+      width: 32px;
+
+  }
+  
+  .bottom-bar {
+      width: 12px;
+  }
+  
+  .aa-hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 200px;
+    z-index: 999;
+  }
+  
+  .aa-hamburger-menu:hover > .aa-icon-bar {
+    background-color: #03ceb8;
+    border: 1px solid #eeff04; 
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    width: 42px;
+    height: 5px;
+    background-color: #eeff00;
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);    
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+    width: 42px;
+    height: 5px;
+    background-color: #eeff00;
+  }
+  /* ./Hamburger */
+  
+  /* Mobile Overlay */
+  .aa-mobile-overlay {
+    position: fixed;
+      top: 0;
+    left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(12, 218, 207, 0.9);
+      overflow: auto;
+      z-index: 99;
+    display: none;
+  }
+  
+  .aa-mobile-nav-items {
+    padding: 0;
+    margin: 65px 0px;
+    text-align: center;
+    list-style: none;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .aa-mobile-nav-items > li {
+    display: block;
+    padding-top: 30px;
+  }
+  
+  .aa-mobile-nav-items > li > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .aa-mobile-nav-items > li > a:hover {
+    color: #eeff00;
+  }
+  /* ./Mobile Overlay */
+  
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .aa-hamburger-menu {
+      display: block;
+      padding-right: 5px;
+      right: 15px;
+    }
+  
+    .aa-nav-items {
+      display: none;
+    }
+
+    .left img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .left {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
+.left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.care-tips h2 {
+    font-size: 45px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.care-tips h3 {
+    font-size: 25px;
+    color: #030303;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+.info-text {
+    float: right;
+    margin-right: 15%;
+    color: #030303;
+}
+
+.care-tips {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+.care-tips img {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+

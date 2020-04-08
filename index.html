@@ -1,142 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Designer App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/0c5590babb.js" crossorigin="anonymous"></script>
-    <script src="scripts.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      function openSection(sectionName) {
-        var i;
-        var x = document.getElementsByClassName("section");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        document.getElementById(sectionName).style.display = "block";
-      }
-    </script>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stay Indoors</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+    </head>
 
-    <script>
-      // Note: This example requires that you consent to location sharing when
-      // prompted by your browser. If you see the error "The Geolocation service
-      // failed.", it means you probably did not give permission for the browser to
-      // locate you.
-      var map, infoWindow;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 6
-        });
-        infoWindow = new google.maps.InfoWindow;
+    <body>
+        <header>
+                <nav class="aa-nav">
+                    <h3 class="aa-nav-icon">Jukebox</h3>
+                </nav>
+    
+                <div class="aa-hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+                  <span class="aa-icon-bar top-bar"></span>
+                  <span class="aa-icon-bar"></span>
+                  <span class="aa-icon-bar bottom-bar"></span>
+                </div>
+                      
+                <div class="aa-mobile-overlay">
+                  <ul class="aa-mobile-nav-items">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Care Tips</a></li>
+                    <li><a href="" id="contact">Who To Contact</a></li>
+                  </ul>
+                </div>
 
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+                <div class="hero-text">
+                    <h1>Take Care Of Yourself<br> & <br>Stay Indoors</h1>
+                    <button><p class="btn">Care Tips</p></button>
+                </div>
+        </header>
 
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
+        
+        <section id="care-tips">
+            <div class="care-tips">
+                <div class="left">
+                    <img src="washinghands.png" alt="image of hands washing" width="100%" height="100%"> 
+                </div>
+                <div class="right">
+                    <h2>Care Tips For You</h2>
+                    <h3>Here's How You Can Keep Safe</h3>
+                    
+                    <div class="info-text">
+    
+                           <h4>
+                               1. Wash Your Hands : 
+                           </h4>
+                           <ul>
+                               <li>Wash Your Hands With Soap For Atleast 20 seconds</li>
+                               <li>If You are not near a soap,Use Hand Sanitizer</li>
+                               <li>Wash Your Hands Very Often</li>
+                           </ul>
+    
+                           <h4>2. Wear A Mask</h4>
+                           <ul>
+                               <li>Use an approved mask</li> 
+                               <li>Avoid Using DIY masks that are not medically proven <br>to prevent viruses</li>
+                               <li>Don't Buy One If You Don't Really Need It<br>(Think Of All the People who do)</li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+        </section>
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-      }
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM5m4YnF7lPtBaNvchjMrgvsNZrtUHGdk&callback=initMap">
-    </script>
-  </head>
-  <body>
+        <footer>
 
+        </footer>
 
-    <div class="navbar">
-      <a  href="#" class="active" onclick="openSection('home')">Home</a>
-      <a  href="#" onclick="openSection('likes')">Likes</a>
-      <a href="#" onclick="openSection('search')">Search</a>
-      <a  href="#"onclick="openSection('profile')">Profile</a>
-    </div>
+        <script src="scripts.js"></script>
+        <script src="jquery.min.js"></script>
+    </body>
 
-    <section id="home" class="section">
-      <div id="map"></div>
-    </section>
-
-    <section  class="section" id="likes" style="display:none;">
-      <i class="fas fa-heart-broken"></i>
-      <p>You have not liked anything yet</p>
-    </section>
-
-    <section class="section" id="search" style="display:none;">
-      <div class="row">
-  <div class="column">
-    <img src="wedding.jpg">
-    <img src="rocks.jpg">
-    <img src="falls2.jpg">
-    <img src="paris.jpg">
-    <img src="nature.jpg">
-    <img src="mist.jpg">
-    <img src="paris.jpg">
-  </div>
-  <div class="column">
-    <img src="underwater.jpg">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
-    <img src="mountainskies.jpg">
-    <img src="rocks.jpg">
-    <img src="underwater.jpg">
-  </div>
-  <div class="column">
-    <img src="wedding.jpg">
-    <img src="rocks.jpg">
-    <img src="falls2.jpg">
-    <img src="paris.jpg">
-    <img src="nature.jpg">
-    <img src="mist.jpg">
-    <img src="paris.jpg">
-  </div>
-  <div class="column">
-    <img src="underwater.jpg">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
-    <img src="mountainskies.jpg">
-    <img src="rocks.jpg">
-    <img src="underwater.jpg">
-  </div>
-</div>
-    </section>
-
-    <section class="section" id="profile" style="display:none;">
-      <div class="profile">
-        <img src="avatar2.png" alt="User Image">
-        <h3>User name</h3>
-        <div class="details">
-          <h3>Followers : 3 <br>Following : 2</h3>
-        </div>
-      </div>
-    </section>
-
-
-  </body>
 </html>
