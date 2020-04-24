@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adventure Camps</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="aa-nav">
+                <img class="aa-nav-icon" src="logo.png" width="40px" height="40px" />
+                <ul class="aa-nav-items">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="" onclick ="div_hide()">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="aa-hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+              <span class="aa-icon-bar top-bar"></span>
+              <span class="aa-icon-bar"></span>
+              <span class="aa-icon-bar bottom-bar"></span>
+            </div>
+                  
+            <div class="aa-mobile-overlay">
+              <ul class="aa-mobile-nav-items">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="" id="contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="hero">
+                <h1>We do Outdoor <BR><span style="color:rgb(194, 107, 76);">Awesome</span></h1>
+                <a href="#contact"><button>BOOK NOW</button></a>
+            </div>
+
+            <div class="hero-image">
+                <img src="Asset.png" width="450px" height="450px"/>
+            </div>
+
+            
+            
+        </header>
+
+        <section class="about">
+            <div class="desc">
+                <h2 style="padding-left:40px;">About</h2>
+                <p style="padding-left:20px;">We are a camping company that specializes in offering cool ways to view the outdoors.
+                    We specialize in forest and mountain side camping.If you are looking for an adventure then
+                    you should definetly check out some of our cool packages that may suit you. </p>
+                
+                <p style="padding-left:40px;" class="quote">"Every man’s life ends the same way. It is only the details of 
+                    how he lived and how he died that distinguish one man from another."</p>
+                    <img src="map.jpg" style="left:-10%; top:10%; z-index:-1;"/>
+            </div>
+            
+            <img src="campfire.jpg" />
+        </section>
+
+        <section class="gallery">
+            <h2>gallery</h2>
+            <p>Fun Time Gallery Bellow</p>
+
+            
+            <img class="g1" src="g1.jpg"/>
+        
+            <img  class="g2" src="g2.jpg"/>
+
+            <img class="g3" src="g3.jpg"/>
+
+            <img class="g6" src="Matam.jpg"/>
+            <img class="g5" src="g4.jpg"/>
+            <img class="g4" src="g6.jpg"/>
+           
+        </section>
+
+        <section class="contact" id="#contact">  
+            <h2>Contact Us</h2>
+            <p>Are you ready for an adventure?Contact Us :</p>
+
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+                <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+                <input type="submit" value="SUBMIT"/>
+            </form>
+
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kruger%20national%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe><a href="https://google-map-generator.com">googlemapps</a>
+                </div>
+                <style>
+                .mapouter{
+                    position:relative;
+                    text-align:right;
+                    height:500px;
+                    width:100%;
+                    }
+                    .gmap_canvas {
+                        overflow:hidden;
+                        background:none!important;
+                        height:500px;
+                        width:100%;
+                        }
+                </style>
+            </div>
+            <style>
+            .mapouter{
+                position:relative;
+                text-align:right;
+                height:500px;
+                width:100%;
+            }
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                height:500px;
+                width:100%;
+            }
+            </style></div>
+        </section>
+
+        <footer>
+            <p>Copyright©  Adventure Camps 2020</p>
+        </footer>
+
+        
+    </body>
+</html>
