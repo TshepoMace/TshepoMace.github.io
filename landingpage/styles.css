@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: hsl(257, 56%, 35%);
+    background-image: url('images/bg-desktop.svg');
+    background-size: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/****Navbar****/
+.nav {
+    width : 100%;
+    height: 100px;
+}
+
+.logo {
+    margin-left: 9%;;
+}
+
+.logo img {
+    margin-top: 25px;
+}
+
+/***\Navbar***/
+
+/***Header***/
+
+.header {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+.left {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.left img {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 600px;
+    height: 450px;
+}
+
+.right {
+    float: left;
+    width: 40%;
+    height: fit-content;
+}
+
+.hero {
+    margin-top: 10%;
+    width: 75%;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    font-weight: 400;
+    margin-top: -15px;
+}
+
+button {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    border: 0;
+    box-shadow: 4px 4px  rgba(0, 0, 0, 0.1);
+    color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-right: 18%;
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+
+  i.fa {
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 1px solid white;
+    color: white;
+    
+  
+  }
+
+
+  @media only screen and (max-width:600px)
+  {
+
+    .logo img{
+        width: 120px;
+        margin-top: 0;
+        height: 120px;
+    }
+    .background {
+        background-image: url('images/bg-desktop.svg');
+    }
+
+    .left {
+        text-align: center;
+        width: 100%;
+        float: none;
+        height: 100%;
+    }
+
+    .left img {
+        width: 350px;
+        height: 300px;
+        margin: 15px ;
+    }
+
+    .right {
+        text-align: center;
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero {
+        margin-top: 10%;
+        color: white;
+        width: 100%;
+    }
+    
+    .hero h2,p, button {
+        margin: 0;
+    }
+
+    .hero p {
+        margin: 15px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-top: 35px;
+        margin-bottom: 5%;
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
