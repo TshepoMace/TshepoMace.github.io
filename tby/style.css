@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Bangers',cursive;
+    text-align: center;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin-left: 25%;
+    margin-top: 30px;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    height: 35px;
+    color: #181818;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.submit {
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background: #F6E71D;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.submit:hover {
+
+    background-color: #F5D10D;
+    border: 2px solid #F5D10D;
+}
+
+.reg a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
