@@ -591,7 +591,20 @@ input[type="button"]:hover {
         width: 100%;
         margin: 0;
     }
-    
+
+    .contact ul>li {
+        display: block;
+        margin-left: 20px;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .contact ul>li>i {
+        background-color: #ffce08;
+        color: #fff;
+        border-radius: 50%;
+        padding: 15px;
+    }
 }
 /**\Contact***/
 
