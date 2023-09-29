@@ -562,7 +562,7 @@ input[type="button"]:hover {
 
 @media (max-width: 800px) {
     .contact {
-        padding: 50px;
+        padding: 50px 20px;
     }
 
     .contact h2 {
