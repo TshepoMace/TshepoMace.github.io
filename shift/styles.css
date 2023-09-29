@@ -452,7 +452,17 @@ button:hover {
     .services {
         width: 100%;
         margin: 0;
-        padding: 50px 30px;
+        padding: 50px 0px;
+    }
+
+    .services h2 {
+        font-size: 70px;
+        margin-left: 10px;
+    }
+
+    .services h3 {
+        font-size: 20px;
+        margin-left: 10px;
     }
   }
 
