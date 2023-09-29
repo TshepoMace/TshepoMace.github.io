@@ -199,46 +199,6 @@ ul>li>a {
   }
   /* ./Mobile Overlay */
 
-  @media (max-width: 800px) { 
-    nav {
-        padding: 3px 0;
-        height: 60px;
-    }
-
-    nav>.logo { 
-        margin-left: 0;
-        font-size: 20px;
-    }
-
-    nav>.logo>p {
-        font-size:7px;
-    }
-
-    .desktop-nav {
-        display: none;
-    }
-
-    .aa-hamburger-menu {
-        display: block;
-        padding-right: 5px;
-        float: right;
-      }
-
-      .hero h1 {
-        font-size: 40px;
-        color: var(--white);
-        margin: 0;
-        padding: 0;
-    }
-    
-    .hero p {
-        color: var(--white);
-        text-align: justify;
-        font-size: 15px;
-    }
-
-}
-
 .hero {
     position: absolute;
     top: 45%;
@@ -296,6 +256,56 @@ button:hover {
     padding: 12px 22px;
 }
 
+.wa-cta {
+    width:200px;
+    height: 200px;
+}
+
+.wa-cta img {
+    width:100%;
+    height:100%;
+}
+
+/***responsive header***/
+ @media (max-width: 800px) { 
+    nav {
+        padding: 3px 0;
+        height: 60px;
+    }
+
+    nav>.logo { 
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    nav>.logo>p {
+        font-size:7px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .aa-hamburger-menu {
+        display: block;
+        padding-right: 5px;
+        float: right;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+        color: var(--white);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hero p {
+        color: var(--white);
+        text-align: justify;
+        font-size: 15px;
+    }
+
+}
 /**\header***/
 
 /***About Us***/
