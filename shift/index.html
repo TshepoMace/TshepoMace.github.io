@@ -22,18 +22,33 @@
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <nav id="navbar">
             <div class="logo"><h2>S<span>H</span>IFT</h2>
                 <p>TRANSPORT</p>
             </div>
             
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="desktop-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="aa-hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+                <span class="aa-icon-bar top-bar"></span>
+                <span class="aa-icon-bar middle-bar"></span>
+                <span class="aa-icon-bar bottom-bar"></span>
+            </div>
+                    
+              <div class="aa-mobile-overlay">
+                <ul class="aa-mobile-nav-items">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
         </nav>
 
         <div class="hero">
@@ -50,7 +65,7 @@
         </div>
     </header>
 
-    <div class="about">
+    <div class="about" id="about">
         
         <div class="container">
             <div class="left">
@@ -69,7 +84,7 @@
             </div>
             <div class="right">
                 <div class="card">
-                    <img src="images/about-img.jpg" alt="Picture of people next to a taxi">
+                    <img src="/images/about-img.jpg" alt="Picture of people next to a taxi">
                     <br>
                     <p><i>"Helping you make memories"</i></p>
                 </div>
@@ -78,7 +93,7 @@
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <h2>Services <span>We Offer</span></h2>
         <h3>Here Are Our Transportation Services On Offer :</h3>
         <br>
@@ -130,7 +145,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Contact <span>Us</span></h2>
         <h3>You can send us a <a href=""><i class="lni lni-whatsapp"></i>Whatsapp</a> or use the following details to contact us : </h3>
         
