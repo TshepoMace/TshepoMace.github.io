@@ -1,1 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@700&display=swap');
 
+:root {
+    --white: #fff;
+    --black: #313131;
+    --yellow: #ffce08;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    background-color: var(--white);
+    font-family: 'Lato', sans-serif;
+
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***header***/
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    border-bottom: #313131;
+    padding: 3px 150px;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+nav>.logo {
+    font-size: 30px;
+    background-color: var(--yellow);
+    float: left;
+    margin-left: 70px;
+    padding: 5px 20px;
+    border-radius: 0 30px 30px 0;
+}
+
+nav>.logo>h2>span {
+    color: var(--white);
+}
+
+nav>.logo>p {
+    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 50%;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 200px;
+
+}
+
+ul>li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 16px;
+}
+
+#navbar ul li a.black-text{
+    color: #313131;
+}
+
+#navbar ul li a.black-text:hover {
+    color: var(--yellow);
+}
+
+#navbar ul li a:hover {
+    color: var(--yellow);
+}
+
+.hero {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translateX(-20%)translateY(-45%);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 70px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+    color: var(--white);
+    text-align: justify;
+    font-size: 18px;
+}
+.h-logo {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 0;
+}
+
+.h-logo>span {
+    color: var(--white);
+}
+
+.hero h1>span {
+    color: var(--yellow);
+}
+
+button {
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 35px;
+    margin-right: 100px;
+    float: right;
+    transition: 0.5s;
+}
+
+button>.lni {
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: green;
+    padding: 12px 22px;
+}
+
+/**\header***/
+
+/***About Us***/
+.about {
+    width: 100%;
+    height: 600px;
+}
+
+.about h2 {
+    font-size: 70px;
+}
+
+.about h2>span {
+    color: var(--yellow);
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container>.left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 70px 100px;
+}
+
+.container>.left>h2 {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.container>.left>p {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.container>.right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.container>.right>.card {
+    height: 80%;
+    width: 500px;
+    margin: 10% 15%;
+    padding: 10px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+
+.container>.right>.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container>.right>.card>img {
+    height: 95%;
+    width: 100%;
+}
+
+/**\About Us***/
+
+/***Services***/
+.services {
+    width: 100%;
+    margin: 0;
+    padding: 50px 150px;
+}
+
+.services h2 {
+    font-size: 70px;
+    margin-left: 45px;
+}
+
+.services h3 {
+    font-size: 20px;
+    margin-left: 45px;
+}
+.services h2>span {
+    color: var(--yellow);
+}
+
+.services>.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.services>.container>.card {
+  padding: 40px 20px ;
+  margin: 10px;
+  flex: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+}
+
+.services>.container>.card:hover{
+    background-color: #ffce08;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: var(--white);
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+/**\Services***/
+
+/***Contact***/
+.contact {
+    width: 100%;
+    margin: 0;
+    padding: 50px 100px;
+}
+
+.contact h2 {
+    font-size: 70px;
+    margin-left: 45px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.contact h2>span {
+    color: var(--yellow);
+}
+
+.contact>.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.map-container {
+    width: 50%;
+    float: right;
+}
+
+.details-container {
+    width: 50%;
+    float: left;
+}
+.contact h3>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.contact h3>a:hover {
+ color: green;
+}
+
+.contact ul {
+    float: none;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.contact ul>li {
+    display: block;
+    margin-left: 50px;
+    font-size: 20px;
+    margin: 10px;;
+}
+
+.contact ul>li>i {
+    background-color: #ffce08;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+
+input {
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border-bottom: var(--yellow) 1px solid;
+    font-weight: 300;
+    outline: none;
+    margin: 10px 10%;
+}
+
+textarea {
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border: var(--yellow) 1px solid;
+    font-weight: 300;
+    outline: none;
+    margin: 10px 10%;
+}
+
+input[type="button"] {
+    background-color: var(--yellow);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 40%;
+    border-radius: 30px;
+
+}
+/**\Contact***/
+
+/***footer***/
+footer {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+footer  h3{
+    font-size: 35px;
+}
+
+footer h3>span {
+    color: var(--yellow);
+}
+
+footer h4 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+/**\footer***/
