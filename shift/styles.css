@@ -444,6 +444,17 @@ button:hover {
         margin: 0;
         padding: 50px 30px;
     }
+
+    .services h2 {
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+.services h3 {
+    font-size: 20px;
+    margin-left: 15px;
+}
+    
   }
 
 /**\Services***/
