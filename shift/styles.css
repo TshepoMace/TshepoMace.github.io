@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -29,7 +33,7 @@ h1,h2,h3,h4 {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('images/header-bg.png');
+    background-image: url('/images/header-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -97,6 +101,132 @@ ul>li>a {
     color: var(--yellow);
 }
 
+
+
+
+
+/* Hamburger */
+  .aa-icon-bar {
+    background-color: var(--yellow);
+    display: block;
+    width: 32px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+  }
+  
+  .top-bar {
+      width: 32px;
+  }
+
+  .middle-bar {
+    height: 2.5px;
+  }
+  
+  .bottom-bar {
+      width: 32px;
+  }
+  
+  .aa-hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+  }
+  
+  .aa-hamburger-menu:hover > .aa-icon-bar {
+    background-color: var(--yellow);
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    width: 22px;
+    background-color: black;
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);    
+  }
+  
+  .aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    width: 22px;
+    background-color: black;
+  }
+  /* ./Hamburger */
+
+
+ /* Mobile Overlay */
+ .aa-mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    overflow: auto;
+    z-index: 99;
+    display: none;
+  }
+  
+  .aa-mobile-nav-items {
+    padding: 0;
+    margin: 60px 40px;
+    text-align: center;
+    list-style: none;
+    float: none;
+  }
+  
+  .aa-mobile-nav-items > li {
+    display: block;
+    padding-top: 30px;
+  }
+  
+  .aa-mobile-nav-items > li > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .aa-mobile-nav-items > li > a:hover {
+    color: var(--yellow);
+  }
+  /* ./Mobile Overlay */
+
+  @media (max-width: 800px) { 
+    nav {
+        padding: 3px 0;
+        height: 60px;
+    }
+
+    nav>.logo { 
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    nav>.logo>p {
+        font-size:7px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .aa-hamburger-menu {
+        display: block;
+        padding-right: 5px;
+        float: right;
+      }
+
+
+}
+
 .hero {
     position: absolute;
     top: 45%;
@@ -159,7 +289,6 @@ button:hover {
 /***About Us***/
 .about {
     width: 100%;
-    height: 600px;
 }
 
 .about h2 {
@@ -221,13 +350,47 @@ button:hover {
     width: 100%;
 }
 
+@media (max-width: 800px) { 
+
+
+    .container>.left {
+        width: 100%;
+        padding: 20px 20px;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .container>.left>h2 {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .container>.left>p {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+
+    .container>.right {
+        float: none;
+        margin-top: 50px;
+        width: 100%;
+        
+    }
+
+    .container>.right>.card {
+        width: 80%;
+        top: 30px;
+        margin-top: 30px;
+    }
+}
 /**\About Us***/
 
 /***Services***/
 .services {
     width: 100%;
     margin: 0;
-    padding: 50px 150px;
+    padding: 50px 100px;
 }
 
 .services h2 {
@@ -266,9 +429,20 @@ button:hover {
 
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
+    }
+
+    .services>.container>.card {
+        flex: 100%;
+
+    }
+
+    .services {
+        width: 100%;
+        margin: 0;
+        padding: 50px 30px;
     }
   }
 
@@ -380,6 +554,34 @@ input[type="button"] {
     margin-left: 40%;
     border-radius: 30px;
 
+}
+
+input[type="button"]:hover {
+    background-color: green;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .contact h2 {
+        font-size: 70px;
+        margin-left: 15px;
+    }
+    
+    .contact h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+
+    .contact>ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    
 }
 /**\Contact***/
 
