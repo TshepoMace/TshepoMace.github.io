@@ -201,10 +201,12 @@ ul>li>a {
 
 .hero {
     position: absolute;
-    top: 45%;
-    left: 20%;
-    transform: translateX(-20%)translateY(-45%);
+    top: 50%;
+    left: 30%;
+    transform: translateX(-30%)translateY(-50%);
     z-index: 1;
+    margin-left: 70px;
+    width: 50%;
 }
 
 .hero h1 {
@@ -273,6 +275,9 @@ button:hover {
         height: 60px;
     }
 
+    .hero {
+        width: auto;
+    }
     nav>.logo { 
         margin-left: 0;
         font-size: 20px;
@@ -292,6 +297,9 @@ button:hover {
         float: right;
       }
 
+      .hero {
+        margin-left: 10px;
+      }
       .hero h1 {
         font-size: 40px;
         color: var(--white);
@@ -334,7 +342,7 @@ button:hover {
     width: 50%;
     height: 100%;
     float: left;
-    padding: 70px 100px;
+    padding: 30px 100px;
 }
 
 .container>.left>h2 {
@@ -449,6 +457,7 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+
     .flex-container {
       flex-direction: column;
     }
@@ -591,8 +600,9 @@ input[type="button"]:hover {
 
 @media (max-width: 800px) {
     .contact {
-        padding: 50px;
+        padding: 20px;
     }
+
 
     .contact h2 {
         font-size: 70px;
@@ -623,6 +633,16 @@ input[type="button"]:hover {
         color: #fff;
         border-radius: 50%;
         padding: 15px;
+    }
+
+    input,textarea {
+        margin: 10px 5px;
+        width: 100%;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        margin-left: 0;
     }
 }
 /**\Contact***/

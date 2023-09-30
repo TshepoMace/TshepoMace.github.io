@@ -2,7 +2,7 @@ const navbar = document.getElementById("navbar");
 const navLinks = document.querySelectorAll("#navbar ul li a");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY < 80) { // Adjust the scroll threshold as needed
+    if (window.scrollY < 60) { // Adjust the scroll threshold as needed
         navbar.style.backgroundColor = "transparent"; // Make navbar transparent
         navbar.style.boxShadow = "none";
         navLinks.forEach(link => {
