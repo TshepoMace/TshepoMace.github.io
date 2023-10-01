@@ -486,6 +486,83 @@ button:hover {
 
 /**\Services***/
 
+/***Fleet***/
+.fleet {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin: 0;
+    height: 500px;
+}
+
+.fleet h2 {
+    font-size: 50px;
+    margin-left: 45px;
+}
+
+.fleet>h2>span {
+    color:var(--yellow);
+}
+.fleet>ul {
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.fleet>ul>li {
+    display: block;
+}
+
+.fleet ul>li>img {
+    width: 100px;
+    height: 70px;
+
+}
+
+
+.fle0et>ul>li>span {
+    color: #ffce08;
+}    
+
+@media  (max-width:500px) {
+
+    .fleet {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 10px;
+        margin: 0;
+        height: 500px;
+    }
+
+
+    .fleet h2 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+    
+
+    .fleet>ul {
+        margin-left: 5px;
+        width: 100%;
+    }
+    
+    .fleet>ul>li {
+        display: block;
+    }
+
+    .fleet>ul>li p {
+        float: left;
+    }
+
+    .fleet>ul>li>p>span {
+        color: #ffce08;
+    }    
+}
+
+
+/**\Fleet**/
+
 /***Contact***/
 .contact {
     width: 100%;
