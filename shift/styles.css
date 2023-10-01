@@ -492,12 +492,17 @@ button:hover {
     padding-top: 50px;
     padding-left: 50px;
     margin: 0;
-    height: 500px;
+    height: 700px;
+}
+
+.feet hr {
+    margin: 100px 0px;
+    color: #ffce08;
 }
 
 .fleet h2 {
     font-size: 50px;
-    margin-left: 45px;
+    margin-left: 75px;
 }
 
 .fleet>h2>span {
@@ -506,7 +511,7 @@ button:hover {
 .fleet>ul {
     list-style: none;
     float: left;
-    margin-left: 50px;
+    margin-left: 75px;
     width: 100%;
 }
 
@@ -514,9 +519,13 @@ button:hover {
     display: block;
 }
 
+.fleet>p {
+    margin-left: 85px;
+}
 .fleet ul>li>img {
     width: 100px;
     height: 70px;
+    margin-top: 20px;
 
 }
 
