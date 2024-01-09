@@ -289,7 +289,14 @@ header {
     margin: 10px 0;
     background-color: #c3b162;
     box-shadow: inset;
+    transition: smooth 0.3s;
 }
+
+.cta:hover {
+    background-color: #fff1b4;
+    padding: 12px;
+}
+
 
 
 @media screen and (max-width: 830px)
