@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f5f0;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans" ,Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+    color: #222;
+}
+
+
+ul{
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+    padding: 0;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+a:hover {
+    color: #f6ce93;
+    padding: 7px;
+}
+
+a:hover ::after {
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #f6ce93;
+}
+
+a:active{
+    border-bottom: 2px solid #f6ce93;
+}
+
+
+.hero {
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero>img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+}
+
+.text-box {
+    width: 300px;
+    height: 50px;
+    padding: 15px 5px; 
+    border: 1px solid #222;
+    margin-left: 40%;
+}
+.banner h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: -100px;
+}
+
+.about{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 600px;
+}
+
+.about h2 {
+    font-size: 37.5px;
+    font-weight: 300;
+}
+
+.about h3{
+    margin-top: 100px;
+    font-size: 18pxpx;
+    font-weight: 400;
+}
+
+.about h2::after
+{
+    border: 2px solid #f6ce93;
+    width: 100px;
+    height: 5px;
+    background-color: #f6ce93;
+}
+.about p {
+    font-size: 17.5px;
+    margin-top: 80px;
+    padding-right: 30%;
+    text-justify: auto;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    padding-left: 50px;
+    float: right;
+}
+
+
+/****Projects****/
+
+.projects {
+    padding: 100px 10%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.projects>h2 {
+    font-size: 37.5px;
+    font-weight: 300;
+}
+
+.projects>h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.line {
+    width: 80%;
+    margin: 40px 10%;
+    height: 2px;
+    background-color: #e4ceae;
+}
+
+.project-container {
+    width: 100%;
+    padding: 50px 20%;
+}
+.project-card {
+    width: 35%;
+    height: 300px;
+    margin: 50px 5%;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: #e4ceae;;
+    color: #f7f5f0;
+    padding: 20px;
+    padding-right: 20px;
+    opacity: 0;
+    transition: right 0.9s ease-in-out;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.description button{
+    margin-top: 15px;
+    width: 100px;
+    font-size: 14px;
+    color: #f7f5f0;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 1px solid #f7f5f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    transition: background-color 0.5s ease-in-out;
+    font-family: "Josefin Sans" ,Arial, Helvetica, sans-serif;
+}
+
+.description button:hover {
+    background-color: #222;
+    color: #f7f5f0;
+}
+
+
+.description h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.description p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.project-card:hover .description {
+    opacity: 1;
+    right: 0;
+}
+
+.description h3,
+.description p {
+    margin: 0;
+}
+
+/***\Projects***/
+
+/***Services***/
+
+.services{
+    width: 100%;
+    height: 700px;
+    padding: 50px;
+    background-color: #f7f5f0;
+}
+
+.services h2 {
+    font-size: 37.5px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 26.25px;
+    font-weight: 300px;
+    float: left;
+    padding: 50px;
+    margin-left: 10%;
+}
+
+.services p {
+    font-size: 17.5px;
+    font-weight: 300;
+    float: left;
+    padding: 50px;
+    margin-left: 10%;
+}
+
+.services img {
+    width: 40%;
+    float: right;
+    height: 350px;
+    margin-right: 10%;
+}
+/**\Services***/
+
+/***Contact***/
+.contact-us{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-us h2 {
+    font-size: 37.5px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-us h3 {
+    font-size: 18.7px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-card {
+    width: 50%;
+    height: 400px;
+    margin: 30px 25%;
+    background-color: #e4ceae;
+    color: #f7f5f0;
+}
+
+.contact-card>.left{
+    background-image: url('images/header1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/**\Contact***/
+
+/***Footer***/
+footer {
+    margin-top: 200px;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background-color: #e4ceae;
+    color: #f7f5f0;
+}
+/**\Footer***/
