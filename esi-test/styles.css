@@ -320,6 +320,7 @@ a:active{
     height: 400px;
     margin: 30px 15%;
     background-color: #e4ceae;
+    color: #f7f5f0;
 }
 
 .contact-card>.left{
@@ -338,5 +339,6 @@ footer {
     padding: 50px;
     text-align: center;
     background-color: #e4ceae;
+    color: #f7f5f0;
 }
 /**\Footer***/
