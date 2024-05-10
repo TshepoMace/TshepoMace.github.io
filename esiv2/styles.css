@@ -122,7 +122,7 @@ li>a {
   .menu ul{
     float: none;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
   .menu>ul>li{
@@ -130,6 +130,10 @@ li>a {
     margin: 10px;
     
   }
+
+ .menu>ul>li>a{
+     font-size: 25px;
+ }
 
   .show{
     display: block;
