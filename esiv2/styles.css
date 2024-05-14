@@ -227,8 +227,11 @@ li>a {
 
 @media (max-width: 950px) {
 
+    .about {
+        height: max-content
+    }
+
     .container{
-        height: max-content;
         padding: 20px 10%;
     }
 
