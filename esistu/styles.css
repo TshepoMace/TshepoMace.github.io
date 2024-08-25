@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: 'Queenside';
+    src: url('/fonts/queensides/Queensides-3z7Ey.ttf');
+}
+
+@font-face {
+    font-family: 'QueensideLight';
+    src: url('/fonts/queensides/QueensidesLight-ZVj3l.ttf');
+}
+
+@font-face {
+    font-family: 'QueensideMedium';
+    src: url('/fonts/queensides/QueensidesMedium-x30zV.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,h2,h3,h4{
+    font-family: 'QueensideLight',sans-serif;
+}
+
+body{
+    background-color: #fff;
+    color: #222;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/CUTE\ SMALL\ APARTMENT\(2\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/***nav***/
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #f0e8e0;
+    position: fixed;
+    padding: 20px 250px;
+    margin: 0;
+    z-index: 2;
+}
+
+.scrolled{
+    background-color: #f0e8e0;
+}
+
+
+.logo {
+    float: left;
+    font-family: 'QueensideLight';
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 350;
+    color: #a07f60
+}
+
+ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+li{
+    display: inline;
+    margin: 0 5px;
+    padding: 0;
+}
+
+li>a {
+    text-decoration: none;
+    color: #a07f60;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+li>a:hover {
+    color: #c3a487;
+    padding-bottom: 10px;
+    font-weight: 330;
+    border-bottom: 1px solid #c3a487;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**mobile nav***/
+.hamburger-menu {
+    display: none;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .hamburger-menu:focus{
+    outline: none;
+  }
+  
+  .middle {
+    opacity: 1; /* Initially visible */
+  }
+  
+  .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #f7f5f0;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+  }
+
+/* X Shape for Close Icon */
+.hamburger-menu.close>.top {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .hamburger-menu.close>.middle {
+    opacity: 0; /* Middle bar disappears */
+  }
+  
+  .hamburger-menu.close>.bottom {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  
+  .menu {
+    display: none;
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    margin: 0;
+    background-color: #a6aba5;
+    color: #f7f5f0;
+    z-index: 3;
+    top: -100%;
+    transition: height 1s ease-in-out;
+  }
+
+  .menu ul{
+    float: none;
+    text-align: center;
+    margin-top: 30%;
+  }
+
+  .menu>ul>li{
+    display: block;
+    margin: 10px;
+    
+  }
+
+  .menu>ul>li>a{
+    font-size: 25px;
+  }
+
+  .menu>ul>li>a:hover{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+  }
+
+  .show{
+    display: block;
+  }
+
+  @media (max-width: 950px) {
+    .hamburger-menu {
+        display: block;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    #desktop-menu{
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+        height: 65px;
+
+    }
+}
+/**\nav***/
+
+.hero{
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  transform: translateX(-45%)translateY(-47%);
+  z-index: 1;
+}
+
+
+
+.hero>h1{
+  font-size: 90px;
+  color: white;
+  font-weight: 200;
+}
+
+
+
+
+#header-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 
+               0 0 20px rgba(255, 255, 255, 0.5), 
+               0 0 30px rgba(255, 255, 255, 0.5), 
+               0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.fade-in-word {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.cursive {
+  font-family: 'QueensideLight',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+}
+
+/****About***/
+.about{
+  width: 100%;
+  height: 600px;
+}
+
+.abt-container{
+  width: 100%;
+  height: 100%;
+  padding: 50px 100px;
+}
+
+.abt-left{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.abt-left>img {
+  width: 100%;
+  height: 100%;
+}
+.abt-right{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  color: #a07f60;
+
+}
+
+.abt-right>h2{
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.abt-right>p{
+  font-weight: 200;
+}
+
+.abt-right>button{
+  width: 150px;
+  margin-top: 20px;
+  padding: 15px 10px;
+  border: none;
+  color: white;
+  font-weight: 300;
+  font-size: 15pxs;
+  background-color: #a07f60;
+  border-radius: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+.abt-right>button:hover{
+  background-color: #c3a487;
+}
+
+
+@media (max-width: 950px) {
+
+  .about {
+      height: max-content;
+  }
+
+  .about>.abt-container>.abt-right h2{
+      text-align: center;
+  }
+
+  .abt-container{
+      padding: 20px 5%;
+  }
+
+  .abt-container>.abt-left, .abt-container>.abt-right {
+      width: 100%;
+      float: none;
+  }
+
+  .abt-container>.abt-right{
+      padding: 20px 5%;
+  }
+
+  .abt-container>.abt-right>p{
+      margin-left: 10px;
+  }
+  .abt-container>.abt-right>h2{
+      margin-left: 15px;
+  }
+}
+/**\About***/
+
+/***portolio***/
+.portfolio{
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+
+
+.portfolio>h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: #c3a487;
+}
+
+.portfolio>p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  color: #c3a487;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #a07f60;
+  background-color: transparent;
+  color: #c3a487;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #a07f60;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 images per row */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-item {
+      flex: 1 1 100%; /* 1 image per row */
+  }
+}
+
+/**\portfolio***/
+

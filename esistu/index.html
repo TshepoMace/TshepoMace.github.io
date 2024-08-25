@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esi Stu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Esi. Stu</div>
+            <ul id="desktop-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
 
+            <!--Mobile Nav-->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+              </div>
+
+              <div class="menu">
+                 <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()" >Portfolio</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+                 </ul>  
+              </div>
+        </nav>
+
+        <div class="hero">
+            <h1 id="header-text">A Touch Of <span class="cursive">Calmness</span></h1>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="abt-container">
+            <div class="abt-left">
+                <img src="images/header5.avif" alt="an image of a couch">
+            </div>
+
+            <div class="abt-right">
+                <h2>About</h2>
+                <br>
+                <br>
+                <p>Welcome to Esi. Stu, where serenity meets sophistication. Our interior bedroom studio is passionate about crafting spaces that exude calm, comfort and understated elegance.
+                    <br>
+                    <br>
+                    Our journey began with a simple yet profound belief: that a well-bedroomed space has the power to transform lives. We’re dedicated to creating environments that inspire tranquillity, 
+                    spark joy, and foster connection. Our approach is rooted in minimalism, with a focus on clean lines, soft textures, and an edited colour pallete that lets the beauty of complicity shine.
+                    <br>
+                    <br>
+                    Our work is a reflection of our values: professionalism, creativity, and a passion for making a difference in people's lives. We can’t wait to help you bring your vision to reality.              
+                </p>
+
+                <button>Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+
+        <h2>Portfolio</h2>
+        <br>
+        <p>Here are some of our collections : </p>
+        <br>
+            <br>
+            <br>
+        <div class="portfolio-container">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+                <button class="filter-btn" data-filter="bathroom">Bathroom</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn" data-filter="lounge">Lounge</button>
+            </div>
+    
+            <br>
+            <br>
+            <br>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Portfolio Item -->
+                <div class="portfolio-item" data-category="kitchen">
+                    <img src="images/A Los Angeles Residence That Balances Wabi-Sabi + Modernism.jpg" alt="Portfolio Image 1">
+                </div>
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="images/M01 H1 PROJECT(1).jpg" alt="Portfolio Image 2">
+                </div>
+                <div class="portfolio-item" data-category="kitchen">
+                    <img src="images/Los Angeles.jpg" alt="Portfolio Image 3">
+                </div>
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="images/M01 H1 PROJECT(2).jpg" alt="Portfolio Image 4">
+                </div>
+                <div class="portfolio-item" data-category="kitchen">
+                    <img src="images/Sierra Towers by Lauri Design Studio is a minimal….jpg" alt="Portfolio Image 5">
+                </div>
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="images/M01 H1 PROJECT(3).jpg" alt="Portfolio Image 6">
+                </div>
+
+                <div class="portfolio-item" data-category="bathroom">
+                    <img src="images/MODERN MASTER BEDROOM(1).jpg" alt="Portfolio Image 6">
+                </div>
+
+                
+
+                <div class="portfolio-item" data-category="bathroom">
+                    <img src="images/MODERN MASTER BEDROOM(2).jpg" alt="Portfolio Image 6">
+                </div>
+
+                <div class="portfolio-item" data-category="bathroom">
+                    <img src="images/MODERN MASTER BEDROOM.jpg" alt="Portfolio Image 6">
+                </div>
+
+                <div class="portfolio-item" data-category="lounge">
+                    <img src="images/MODERN VILLA.jpg" alt="Portfolio Image 6">
+                </div>
+
+                <div class="portfolio-item" data-category="lounge">
+                    <img src="images/DUBAI VILLA(1).jpg" alt="Portfolio Image 6">
+                </div>
+
+                <div class="portfolio-item" data-category="lounge">
+                    <img src="images/DUBAI VILLA.jpg" alt="Portfolio Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
