@@ -610,7 +610,7 @@ li>a:hover {
 @media (max-width: 768px) {
 
   .contact{
-    padding: 50px;
+    padding: 50px 20px;
   }
 
   .contact-container{
