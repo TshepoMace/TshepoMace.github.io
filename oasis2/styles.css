@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #977a4c;
+    background-color: #f9f9f7;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/WDF.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    padding-top: 30px;
+}
+
+ul{
+    list-style: none;
+    padding: 10px 150px;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: #977a4c;
+    font-size: 20px;
+    font-weight: 200;
+    transition: all 0.3s ease;
+    padding: 0;
+
+}
+
+
+li a:hover{
+    color: #FFDAB9;
+    font-size: 21px;
+    border-bottom: 2px solid #FFDAB9;
+    padding-bottom: 5px;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 70px;
+    font-weight:300;
+    
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 130;
+
+}
+
+#count-down{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+form{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+input[type="email"]{
+    border: none;
+    border-bottom: #00535e 2px solid;
+    font-size: 20px;
+    font-weight: 200;
+    color: #c69d35;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+}
+
+input[type="email"]:focus{
+    outline: #c69d35 solid 1px;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: #074049;
+    /*background-color: #00535e;*/
+    color: #f9f9f7;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 11px;
+    width: 30%;
+}
+
+input[type="submit"]:hover{
+    background-color: #FFDAB9;
+}
+
