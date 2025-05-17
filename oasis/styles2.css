@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: #977a4c;
+    background-color: #f9f9f7;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    padding: 20px 150px;
+    color: #977a4c;
+    /*color: #c69d35;*/
+    position: fixed;
+}
+
+nav .logo{
+    float: left;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul{
+    list-style: none;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #977a4c;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav ul li a:hover{
+    color: #FFDAB9;
+    font-size: 21px;
+    border-bottom: 2px solid #FFDAB9;
+    padding-bottom: 5px;
+}
+
+
+.h-container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.h-left{
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    padding: 50px 0;
+    padding-top: 100px;
+}
+
+.h-right{
+    width: 50%;
+    height: 100%;
+    background-color: #074049;
+    background-image: url("/images/oasislogo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*0background-color: #00535e;*/
+    float: left;    
+}
+
+
+.h-left h2{
+    font-size: 40px;
+    font-weight: 100;
+
+}
+
+.h-left p{
+    font-size: 20px;
+}
+#count-down{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+form{
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+input[type="email"]{
+    border: none;
+    border-bottom: #00535e 2px solid;
+    font-size: 20px;
+    font-weight: 200;
+    color: #c69d35;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+}
+
+input[type="email"]:focus{
+    outline: #c69d35 solid 1px;
+}
+
+input[type="submit"]{
+    border: none;
+    width: 20%;
+    background-color: #074049;
+    /*background-color: #00535e;*/
+    color: #f9f9f7;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 11px;
+    border-radius: 5px 0;
+}
+
+input[type="submit"]:hover{
+    background-color: #FFDAB9;
+}
+
+
+.h-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***About***/
+.about{
+    width: 100%;
+    color: #977a4c;
+    padding: 100px 20%;
+}
+
+.about h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.about p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.about-cards{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.about-cards .card{
+    width: 30%;
+    height: 300px;
+    background-color: #f9f9f7;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-cards .card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.about-cards .card h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.about-cards .card p{
+    font-size: 20px;
+    font-weight: 150;
+    padding: 0 5%;
+}   
+/**\About**/
+
+/***Team***/
+.team{
+    width: 100%;
+    background-color: #074049;
+    color: #977a4c;
+    padding: 100px 10%;
+}
+
+.team h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.team h2{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.team p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.team-cards{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.team-cards .card{
+    width: 30%;
+    height: 300px;
+    background-color: #f9f9f7;
+    margin: 10px;
+    border-radius: 0 0 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-cards .card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.team-cards .card h3{
+    font-size: 25px;
+    font-weight: 200;
+}
