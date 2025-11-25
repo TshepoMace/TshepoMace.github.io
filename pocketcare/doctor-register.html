@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Doctor Registration - PocketCare</title>
+<style>
+  :root {
+    --primary: #ffffff;
+    --secondary-start: #007f7f;
+    --secondary-end: #00b3b3;
+    --tertiary: #000000;
+  }
+  body { font-family: Arial, sans-serif; margin:0; background:#f7f9fa; display:flex; justify-content:center; align-items:center; height:100vh; }
+  .form-container { background: var(--primary); padding:30px; border-radius:12px; width:400px; max-width:90%; display:flex; flex-direction:column; gap:20px; }
+  h2 { margin:0 0 10px 0; }
+  .form-step { display:none; flex-direction:column; gap:15px; animation: slideFade 0.5s ease; }
+  .form-step.active { display:flex; }
+  label { font-size:14px; color:#555; }
+  input, textarea, select {
+    padding:10px; font-size:14px; border:none; border-bottom:2px solid var(--secondary-start); outline:none; width:100%; border-radius:0;
+    transition:0.3s;
+  }
+  input:focus, textarea:focus, select:focus {
+    box-shadow: 0 2px 6px rgba(0,179,179,0.4);
+    border-bottom-color: var(--secondary-end);
+  }
+  textarea { resize:none; }
+  button { padding:12px; font-size:14px; border:none; border-radius:8px; background: linear-gradient(135deg,var(--secondary-start),var(--secondary-end)); color:#fff; cursor:pointer; transition:0.3s; }
+  button:hover { box-shadow:0 0 10px rgba(0,179,179,0.5); }
+  .buttons { display:flex; justify-content:space-between; gap:10px; }
+  @keyframes slideFade {
+    from { opacity:0; transform: translateY(20px); }
+    to { opacity:1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <form id="doctorForm">
+    <!-- Step 1 -->
+    <div class="form-step active" id="step1">
+      <h2>Step 1: Account Info</h2>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+      <label for="title">Title</label>
+      <select id="title" required>
+        <option value="Dr">Dr</option>
+        <option value="Prof">Prof</option>
+      </select>
+      <label for="specialization">Specialization</label>
+      <input type="text" id="specialization" placeholder="e.g. General Practitioner" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+      <div class="buttons">
+        <span></span>
+        <button type="button" id="next1">Next</button>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="form-step" id="step2">
+      <h2>Step 2: Practice Info</h2>
+      <label for="clinic">Clinic / Practice Name</label>
+      <input type="text" id="clinic" required />
+      <label for="availability">Preferred Days of Operation</label>
+      <select id="availability" required>
+        <option value="Monday-Friday">Monday - Friday</option>
+        <option value="Weekends">Saturday - Sunday</option>
+        <option value="Custom">Custom</option>
+      </select>
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" rows="3" placeholder="Tell patients about yourself"></textarea>
+      <div class="buttons">
+        <button type="button" id="back1">Back</button>
+        <button type="button" id="next2">Register</button>
+      </div>
+    </div>
+
+    <!-- Success message -->
+    <div class="form-step" id="success">
+      <h2>Registration Complete!</h2>
+      <p>Your account has been successfully created.</p>
+    </div>
+  </form>
+</div>
+
+<script>
+const step1=document.getElementById('step1');
+const step2=document.getElementById('step2');
+const success=document.getElementById('success');
+
+document.getElementById('next1').addEventListener('click',()=>{
+  step1.classList.remove('active');
+  step2.classList.add('active');
+});
+
+document.getElementById('back1').addEventListener('click',()=>{
+  step2.classList.remove('active');
+  step1.classList.add('active');
+});
+
+document.getElementById('next2').addEventListener('click',()=>{
+  step2.classList.remove('active');
+  success.classList.add('active');
+});
+</script>
+</body>
+</html>

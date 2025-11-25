@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Patient Registration - PocketCare</title>
+<style>
+  :root {
+    --primary: #ffffff;
+    --secondary-start: #007f7f;
+    --secondary-end: #00b3b3;
+    --tertiary: #000000;
+  }
+  body { font-family: Arial, sans-serif; margin:0; background:#f7f9fa; display:flex; justify-content:center; align-items:center; height:100vh; }
+  .form-container { background: var(--primary); padding:30px; border-radius:12px; width:400px; max-width:90%; display:flex; flex-direction:column; gap:20px; }
+  h2 { margin:0 0 10px 0; }
+  .form-step { display:flex; flex-direction:column; gap:15px; animation: slideFade 0.5s ease; }
+  label { font-size:14px; color:#555; }
+  input, select { padding:10px; font-size:14px; border:none; border-bottom:2px solid var(--secondary-start); outline:none; width:100%; border-radius:0; transition:0.3s; }
+  input:focus, select:focus { box-shadow:0 2px 6px rgba(0,179,179,0.4); border-bottom-color: var(--secondary-end); }
+  button { width: 200px; padding:12px; font-size:14px; border:none; border-radius:8px; background: linear-gradient(135deg,var(--secondary-start),var(--secondary-end)); color:#fff; cursor:pointer; transition:0.3s; margin-top:10px; }
+  button:hover { box-shadow:0 0 10px rgba(0,179,179,0.5); }
+  @keyframes slideFade { from { opacity:0; transform: translateY(20px); } to { opacity:1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h2>Patient Registration</h2>
+  <form id="patientForm">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" required />
+    <label for="email">Email</label>
+    <input type="email" id="email" required />
+    <label for="password">Password</label>
+    <input type="password" id="password" required />
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required />
+    <label for="gender">Gender</label>
+    <select id="gender" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+</div>
+<script>
+document.getElementById('patientForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Patient registration submitted');
+});
+</script>
+</body>
+</html>

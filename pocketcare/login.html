@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Login - PocketCare</title>
+<style>
+  :root {
+    --primary: #ffffff;
+    --secondary-start: #007f7f;
+    --secondary-end: #00b3b3;
+    --tertiary: #000000;
+  }
+  body { font-family: Arial, sans-serif; margin:0; background:#f7f9fa; display:flex; justify-content:center; align-items:center; height:100vh; }
+  .login-container { background: var(--primary); padding:40px; border-radius:12px; width:360px; max-width:90%; display:flex; flex-direction:column; gap:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+  h2 { margin:0 0 20px 0; text-align:center; }
+  label { font-size:14px; color:#555; }
+  input { padding:12px; font-size:14px; border:none; border-bottom:2px solid var(--secondary-start); outline:none; width:100%; border-radius:0; transition:0.3s; }
+  input:focus { box-shadow:0 2px 6px rgba(0,179,179,0.4); border-bottom-color: var(--secondary-end); }
+  button { padding:12px; font-size:14px; border:none; border-radius:8px; background: linear-gradient(135deg,var(--secondary-start),var(--secondary-end)); color:#fff; cursor:pointer; transition:0.3s; margin-top:10px; }
+  button:hover { box-shadow:0 0 10px rgba(0,179,179,0.5); }
+  .links { display:flex; justify-content:space-between; font-size:13px; margin-top:10px; }
+  .links a { color: var(--secondary-start); text-decoration:none; }
+  .links a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Doctor Login</h2>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+      <button type="submit">Login</button>
+      <div class="links">
+        <a href="#">Forgot password?</a>
+        <a href="#">Register</a>
+      </div>
+    </form>
+  </div>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Login submitted');
+});
+</script>
+</body>
+</html>
